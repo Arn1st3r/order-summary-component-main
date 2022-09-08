@@ -1,0 +1,116 @@
+@font-face {
+	font-family: "Red Hat Display";
+	src: url("RedHatDisplay-VariableFont_wght.ttf");
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-image: url("./images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+	background-size: contain;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Red Hat Display";
+}
+.container {
+	margin-top: 20vh;
+	background-color: white;
+	border-radius: 1.5rem;
+}
+.headline p {
+	text-align: center;
+	color: hsl(224, 23%, 55%);
+}
+.offer {
+	margin: 2rem 0 2rem 0;
+	background-color: hsl(225, 100%, 98%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 0.625rem;
+	width: 80%;
+	height: 4.5rem;
+	margin-left: 2.2rem;
+	padding: 10px;
+}
+
+.image img {
+	border-radius: 1.5rem 1.5rem 0 0;
+	width: 100%;
+}
+h1 {
+	text-align: center;
+	font-weight: 900;
+}
+h4 {
+	margin: 0.2rem 0.2rem 0.3rem 0;
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.button-payment {
+	width: 80%;
+	border: none;
+	background-color: hsl(245, 75%, 52%);
+	padding: 0.8rem;
+	border-radius: 0.625rem;
+	color: white;
+	font-weight: 700;
+	box-shadow: 0 12px 12px 0 lightgray;
+	margin-bottom: 1.5rem;
+}
+.button-cancel {
+	border: none;
+	background-color: white;
+	color: hsl(224, 23%, 55%);
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
+.button-cancel:hover {
+	color: black;
+}
+.button-payment:hover {
+	opacity: 70%;
+}
+.button-change {
+	border: none;
+	background-color: unset;
+	color: hsl(245, 75%, 52%);
+	font-weight: 700;
+	text-decoration: underline;
+	margin-left: -55px;
+}
+.button-change:hover {
+	text-decoration: none;
+	opacity: 70%;
+}
+.icon_music {
+	height: 60%;
+	margin: 12px 0 0 15px;
+}
+.price {
+	margin: 12px 7.2rem 0 0;
+}
+.price p {
+	margin: auto;
+	color: hsl(224, 23%, 55%);
+}
+
+@media (min-width: 400px) {
+	.container {
+		width: 400px;
+	}
+	.icon_music {
+		height: 70%;
+		margin: 12px 0 0 5px;
+	}
+	.price {
+		margin: 12px 7.2rem 0 24px;
+	}
+}
